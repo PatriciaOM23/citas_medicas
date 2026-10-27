@@ -1,0 +1,14 @@
+ private List<Especialidad> CargarEspecialidades()
+ {
+     return new List<Especialidad>
+     {
+         new Especialidad { Imagen = "cardiologia.png",   Nombre = "Cardiología",          Doctor = "Dra. Laura Martín",   DiasEspera = 25 },
+         new Especialidad { Imagen = "dermatologia.png",  Nombre = "Dermatología",         Doctor = "Dr. Javier Ruiz",     DiasEspera = 40 },
+         new Especialidad { Imagen = "oftalmologia.png",  Nombre = "Oftalmología",         Doctor = "Dra. Elena Gómez",    DiasEspera = 32 },
+         new Especialidad { Imagen = "traumatologia.png", Nombre = "Traumatología",        Doctor = "Dr. Carlos Navarro",  DiasEspera = 55 },
+         new Especialidad { Imagen = "pediatria.png",     Nombre = "Pediatría",            Doctor = "Dra. Marta Sánchez",  DiasEspera = 7 },
+         new Especialidad { Imagen = "neurologia.png",    Nombre = "Neurología",           Doctor = "Dr. Andrés López",    DiasEspera = 60 },
+         new Especialidad { Imagen = "ginecologia.png",   Nombre = "Ginecología",          Doctor = "Dra. Sofía Torres",   DiasEspera = 21 },
+         new Especialidad { Imagen = "otorrino.png",      Nombre = "Otorrinolaringología", Doctor = "Dr. Pablo Hernández", DiasEspera = 35 }
+     };
+ }

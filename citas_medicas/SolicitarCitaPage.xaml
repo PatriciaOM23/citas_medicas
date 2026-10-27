@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citas_medicas.SolicitarCitaPage"
+             Title="SolicitarCitaPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Nombre"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            x:Name="nombreEntry"
+            Keyboard="Text"
+            Placeholder="Patricia"
+            HorizontalOptions="Center"
+            MaxLength="50"
+            WidthRequest="200"
+            
+            />
+        <Label 
+             Text="Apellidos"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" />
+        <Entry
+            x:Name="apellidosEntry"
+             Keyboard="Text"
+             Placeholder="Olmedo Majano"
+             MaxLength="50"
+             WidthRequest="200"
+            
+             HorizontalOptions="Center"
+             />
+        <Label 
+              Text="Número de paciente"
+              VerticalOptions="Center" 
+              HorizontalOptions="Center" />
+        <Entry
+             x:Name="pacienteEntry"
+              Keyboard="Numeric"
+              Placeholder="1234567"
+              MaxLength="7"
+              HorizontalOptions="Center"
+              WidthRequest="200"
+              />
+       
+        <Picker
+            x:Name="turnoEntry"
+            Title="Preferencia de turno"
+            HorizontalOptions="Center"
+            HeightRequest="65"
+            WidthRequest="160">
+            
+            <Picker.Items>
+                <x:String>Mañana</x:String>
+                <x:String>Tarde</x:String>
+            </Picker.Items>
+        </Picker>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <CheckBox
+               x:Name="recordarDatos"
+               IsEnabled="True"            
+               HorizontalOptions="Center"/>
+            <Label 
+               Text="Recordar mis datos"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="solicitarBtn"
+            Text="Solicitar cita"
+            Clicked="SolicitarCitaBtn_Clicked"
+            HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+</ContentPage>

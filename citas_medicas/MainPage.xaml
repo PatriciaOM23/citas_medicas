@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citas_medicas.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                Text="Citas médicas"
+                
+                />
+            <Button
+                x:Name="solitarCitaBtn"
+                Text="Solicitar Cita" 
+                SemanticProperties.Hint="Solicitar cita"
+                Clicked="solicitarCitaBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                 x:Name="consultarCitaBtn"
+                 Text="Consulta de citas" 
+                 SemanticProperties.Hint="Consultar citas"
+                 Clicked="consultarCitaBtn_Clicked"
+                 HorizontalOptions="Fill" />    
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

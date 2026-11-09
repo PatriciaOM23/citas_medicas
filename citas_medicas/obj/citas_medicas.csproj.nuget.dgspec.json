@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\community\\citas_medicas\\citas_medicas\\citas_medicas.csproj": {}
+    "C:\\Users\\patip\\source\\repos\\citas_medicas\\citas_medicas\\citas_medicas.csproj": {}
   },
   "projects": {
-    "C:\\community\\citas_medicas\\citas_medicas\\citas_medicas.csproj": {
+    "C:\\Users\\patip\\source\\repos\\citas_medicas\\citas_medicas\\citas_medicas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\community\\citas_medicas\\citas_medicas\\citas_medicas.csproj",
+        "projectUniqueName": "C:\\Users\\patip\\source\\repos\\citas_medicas\\citas_medicas\\citas_medicas.csproj",
         "projectName": "citas_medicas",
-        "projectPath": "C:\\community\\citas_medicas\\citas_medicas\\citas_medicas.csproj",
-        "packagesPath": "C:\\Users\\PatriciaOlmedoMajano\\.nuget\\packages\\",
-        "outputPath": "C:\\community\\citas_medicas\\citas_medicas\\obj\\",
+        "projectPath": "C:\\Users\\patip\\source\\repos\\citas_medicas\\citas_medicas\\citas_medicas.csproj",
+        "packagesPath": "C:\\Users\\patip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\patip\\source\\repos\\citas_medicas\\citas_medicas\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PatriciaOlmedoMajano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\patip\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

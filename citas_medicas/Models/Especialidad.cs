@@ -1,4 +1,5 @@
-namespace Citas.Models;
+namespace citas_medicas.Models;
+
 
 public class Especialidad
 {

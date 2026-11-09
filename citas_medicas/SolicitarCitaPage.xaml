@@ -7,7 +7,10 @@
         <Label 
             Text="Nombre"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            FontAttributes="Bold"
+            FontSize="13"/>
+            
         <Entry
             x:Name="nombreEntry"
             Keyboard="Text"
@@ -15,25 +18,31 @@
             HorizontalOptions="Center"
             MaxLength="50"
             WidthRequest="200"
+            HeightRequest="40"
+
             
             />
         <Label 
              Text="Apellidos"
              VerticalOptions="Center" 
-             HorizontalOptions="Center" />
+             HorizontalOptions="Center" 
+             FontAttributes="Bold"
+             FontSize="13"/>
         <Entry
             x:Name="apellidosEntry"
              Keyboard="Text"
              Placeholder="Olmedo Majano"
              MaxLength="50"
              WidthRequest="200"
-            
+             HeightRequest="40"
              HorizontalOptions="Center"
              />
         <Label 
               Text="Número de paciente"
               VerticalOptions="Center" 
-              HorizontalOptions="Center" />
+              HorizontalOptions="Center"   
+              FontAttributes="Bold"
+              FontSize="13"/>
         <Entry
              x:Name="pacienteEntry"
               Keyboard="Numeric"
@@ -41,14 +50,18 @@
               MaxLength="7"
               HorizontalOptions="Center"
               WidthRequest="200"
+              HeightRequest="30"
+            
+
               />
        
         <Picker
             x:Name="turnoEntry"
             Title="Preferencia de turno"
             HorizontalOptions="Center"
-            HeightRequest="65"
-            WidthRequest="160">
+            HeightRequest="50"
+            WidthRequest="160"
+           >
             
             <Picker.Items>
                 <x:String>Mañana</x:String>
@@ -67,11 +80,39 @@
 
         </HorizontalStackLayout>
 
+        <VerticalStackLayout
+            Padding= "35,0"
+            Spacing="10"
+            >
+            <CollectionView x:Name="listaEspecialidades" SelectionMode="Single" SelectionChanged="listaEspecialidades_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".1*" />
+                                <ColumnDefinition Width=".11*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="{Binding Imagen}" HeightRequest="50" />
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="{Binding Nombre}" FontAttributes="Bold" FontSize="Micro" />
+                                <Label Text="{Binding Doctor}" FontAttributes="Italic" FontSize="12"/>
+                                <Label Text="{Binding DiasEspera}" FontAttributes="Italic" FontSize="11" />
+
+                            </VerticalStackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </VerticalStackLayout>
+
         <Button
             x:Name="solicitarBtn"
             Text="Solicitar cita"
             Clicked="SolicitarCitaBtn_Clicked"
             HorizontalOptions="Center"/>
+        
+        
 
     </VerticalStackLayout>
 </ContentPage>

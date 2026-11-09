@@ -1,8 +1,20 @@
-namespace Citas.Models;
+namespace citas_medicas.Models;
 
 // Datos de una cita solicitada. Se guarda en el fichero citas.json
 public class Cita
 {
+    public Cita(string nombre, string apellidos, string numPaciente, string turno, string especialidad, string doctor, int diasEspera, DateTime fechaSolicitud)
+    {
+        Nombre = nombre;
+        Apellidos = apellidos;
+        NumPaciente = numPaciente;
+        Turno = turno;
+        Especialidad = especialidad;
+        Doctor = doctor;
+        DiasEspera = diasEspera;
+        FechaSolicitud = fechaSolicitud;
+    }
+
     public string Nombre { get; set; } = string.Empty;
     public string Apellidos { get; set; } = string.Empty;
     public string NumPaciente { get; set; } = string.Empty;
@@ -11,4 +23,7 @@ public class Cita
     public string Doctor { get; set; } = string.Empty;
     public int DiasEspera { get; set; }
     public DateTime FechaSolicitud { get; set; }
+
+
+    
 }

@@ -9,8 +9,11 @@
             Spacing="25">
 
             <Label 
+                Padding="50"
                 Text="Citas médicas"
-                
+                FontAttributes="Bold"
+                FontSize="Title"
+                HorizontalOptions="Center"
                 />
             <Button
                 x:Name="solitarCitaBtn"

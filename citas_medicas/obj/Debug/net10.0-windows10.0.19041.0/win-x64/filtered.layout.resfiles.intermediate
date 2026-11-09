@@ -44,9 +44,12 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
-dotnet_bot.scale-100.png
-dotnet_bot.scale-125.png
-dotnet_bot.scale-150.png
-dotnet_bot.scale-200.png
-dotnet_bot.scale-400.png
+cardiologia.scale-100.png
+dermatologia.scale-100.png
+ginecologia.scale-100.png
+neurologia.scale-100.png
+oftalmologia.scale-100.png
+otorrino.scale-100.png
+pediatria.scale-100.png
+traumatologia.scale-100.png
 AboutAssets.txt
